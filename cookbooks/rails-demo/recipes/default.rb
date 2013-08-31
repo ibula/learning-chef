@@ -11,5 +11,9 @@ application "rails-demo" do
   owner "vagrant"
   group "vagrant"
   repository "http://github.com/ibula/learning-chef.git"
-  passanger_apache2
+  rails do
+   bundler true
+  end 
+  
+  passenger_apache2
 end
